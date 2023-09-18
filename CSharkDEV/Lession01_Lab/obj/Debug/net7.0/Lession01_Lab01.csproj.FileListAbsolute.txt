@@ -1,0 +1,14 @@
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CSharkDEV\Lession01_Lab\bin\Debug\net7.0\Lession01_Lab01.exe
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CSharkDEV\Lession01_Lab\bin\Debug\net7.0\Lession01_Lab01.deps.json
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CSharkDEV\Lession01_Lab\bin\Debug\net7.0\Lession01_Lab01.runtimeconfig.json
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CSharkDEV\Lession01_Lab\bin\Debug\net7.0\Lession01_Lab01.dll
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CSharkDEV\Lession01_Lab\bin\Debug\net7.0\Lession01_Lab01.pdb
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CSharkDEV\Lession01_Lab\obj\Debug\net7.0\Lession01_Lab01.GeneratedMSBuildEditorConfig.editorconfig
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CSharkDEV\Lession01_Lab\obj\Debug\net7.0\Lession01_Lab01.AssemblyInfoInputs.cache
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CSharkDEV\Lession01_Lab\obj\Debug\net7.0\Lession01_Lab01.AssemblyInfo.cs
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CSharkDEV\Lession01_Lab\obj\Debug\net7.0\Lession01_Lab01.csproj.CoreCompileInputs.cache
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CSharkDEV\Lession01_Lab\obj\Debug\net7.0\Lession01_Lab01.dll
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CSharkDEV\Lession01_Lab\obj\Debug\net7.0\refint\Lession01_Lab01.dll
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CSharkDEV\Lession01_Lab\obj\Debug\net7.0\Lession01_Lab01.pdb
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CSharkDEV\Lession01_Lab\obj\Debug\net7.0\Lession01_Lab01.genruntimeconfig.cache
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CSharkDEV\Lession01_Lab\obj\Debug\net7.0\ref\Lession01_Lab01.dll

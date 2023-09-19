@@ -1,0 +1,14 @@
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark02\Lession02.ex04\bin\Debug\net7.0\Lession02.ex04.exe
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark02\Lession02.ex04\bin\Debug\net7.0\Lession02.ex04.deps.json
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark02\Lession02.ex04\bin\Debug\net7.0\Lession02.ex04.runtimeconfig.json
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark02\Lession02.ex04\bin\Debug\net7.0\Lession02.ex04.dll
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark02\Lession02.ex04\bin\Debug\net7.0\Lession02.ex04.pdb
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark02\Lession02.ex04\obj\Debug\net7.0\Lession02.ex04.GeneratedMSBuildEditorConfig.editorconfig
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark02\Lession02.ex04\obj\Debug\net7.0\Lession02.ex04.AssemblyInfoInputs.cache
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark02\Lession02.ex04\obj\Debug\net7.0\Lession02.ex04.AssemblyInfo.cs
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark02\Lession02.ex04\obj\Debug\net7.0\Lession02.ex04.csproj.CoreCompileInputs.cache
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark02\Lession02.ex04\obj\Debug\net7.0\Lession02.ex04.dll
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark02\Lession02.ex04\obj\Debug\net7.0\refint\Lession02.ex04.dll
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark02\Lession02.ex04\obj\Debug\net7.0\Lession02.ex04.pdb
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark02\Lession02.ex04\obj\Debug\net7.0\Lession02.ex04.genruntimeconfig.cache
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark02\Lession02.ex04\obj\Debug\net7.0\ref\Lession02.ex04.dll

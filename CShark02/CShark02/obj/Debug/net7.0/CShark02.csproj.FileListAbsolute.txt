@@ -1,0 +1,14 @@
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark02\CShark02\bin\Debug\net7.0\CShark02.exe
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark02\CShark02\bin\Debug\net7.0\CShark02.deps.json
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark02\CShark02\bin\Debug\net7.0\CShark02.runtimeconfig.json
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark02\CShark02\bin\Debug\net7.0\CShark02.dll
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark02\CShark02\bin\Debug\net7.0\CShark02.pdb
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark02\CShark02\obj\Debug\net7.0\CShark02.GeneratedMSBuildEditorConfig.editorconfig
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark02\CShark02\obj\Debug\net7.0\CShark02.AssemblyInfoInputs.cache
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark02\CShark02\obj\Debug\net7.0\CShark02.AssemblyInfo.cs
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark02\CShark02\obj\Debug\net7.0\CShark02.csproj.CoreCompileInputs.cache
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark02\CShark02\obj\Debug\net7.0\CShark02.dll
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark02\CShark02\obj\Debug\net7.0\refint\CShark02.dll
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark02\CShark02\obj\Debug\net7.0\CShark02.pdb
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark02\CShark02\obj\Debug\net7.0\CShark02.genruntimeconfig.cache
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark02\CShark02\obj\Debug\net7.0\ref\CShark02.dll

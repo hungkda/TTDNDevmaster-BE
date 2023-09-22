@@ -1,0 +1,14 @@
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark04\Lab04.4\bin\Debug\net7.0\Lab04.4.exe
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark04\Lab04.4\bin\Debug\net7.0\Lab04.4.deps.json
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark04\Lab04.4\bin\Debug\net7.0\Lab04.4.runtimeconfig.json
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark04\Lab04.4\bin\Debug\net7.0\Lab04.4.dll
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark04\Lab04.4\bin\Debug\net7.0\Lab04.4.pdb
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark04\Lab04.4\obj\Debug\net7.0\Lab04.4.GeneratedMSBuildEditorConfig.editorconfig
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark04\Lab04.4\obj\Debug\net7.0\Lab04.4.AssemblyInfoInputs.cache
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark04\Lab04.4\obj\Debug\net7.0\Lab04.4.AssemblyInfo.cs
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark04\Lab04.4\obj\Debug\net7.0\Lab04.4.csproj.CoreCompileInputs.cache
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark04\Lab04.4\obj\Debug\net7.0\Lab04.4.dll
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark04\Lab04.4\obj\Debug\net7.0\refint\Lab04.4.dll
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark04\Lab04.4\obj\Debug\net7.0\Lab04.4.pdb
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark04\Lab04.4\obj\Debug\net7.0\Lab04.4.genruntimeconfig.cache
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark04\Lab04.4\obj\Debug\net7.0\ref\Lab04.4.dll

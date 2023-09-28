@@ -1,0 +1,14 @@
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark07\Ex02\bin\Debug\net7.0\Ex02.exe
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark07\Ex02\bin\Debug\net7.0\Ex02.deps.json
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark07\Ex02\bin\Debug\net7.0\Ex02.runtimeconfig.json
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark07\Ex02\bin\Debug\net7.0\Ex02.dll
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark07\Ex02\bin\Debug\net7.0\Ex02.pdb
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark07\Ex02\obj\Debug\net7.0\Ex02.GeneratedMSBuildEditorConfig.editorconfig
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark07\Ex02\obj\Debug\net7.0\Ex02.AssemblyInfoInputs.cache
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark07\Ex02\obj\Debug\net7.0\Ex02.AssemblyInfo.cs
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark07\Ex02\obj\Debug\net7.0\Ex02.csproj.CoreCompileInputs.cache
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark07\Ex02\obj\Debug\net7.0\Ex02.dll
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark07\Ex02\obj\Debug\net7.0\refint\Ex02.dll
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark07\Ex02\obj\Debug\net7.0\Ex02.pdb
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark07\Ex02\obj\Debug\net7.0\Ex02.genruntimeconfig.cache
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark07\Ex02\obj\Debug\net7.0\ref\Ex02.dll

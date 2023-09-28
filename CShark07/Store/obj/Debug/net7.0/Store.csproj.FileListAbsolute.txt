@@ -1,0 +1,14 @@
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark07\Store\bin\Debug\net7.0\Store.exe
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark07\Store\bin\Debug\net7.0\Store.deps.json
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark07\Store\bin\Debug\net7.0\Store.runtimeconfig.json
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark07\Store\bin\Debug\net7.0\Store.dll
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark07\Store\bin\Debug\net7.0\Store.pdb
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark07\Store\obj\Debug\net7.0\Store.GeneratedMSBuildEditorConfig.editorconfig
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark07\Store\obj\Debug\net7.0\Store.AssemblyInfoInputs.cache
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark07\Store\obj\Debug\net7.0\Store.AssemblyInfo.cs
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark07\Store\obj\Debug\net7.0\Store.csproj.CoreCompileInputs.cache
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark07\Store\obj\Debug\net7.0\Store.dll
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark07\Store\obj\Debug\net7.0\refint\Store.dll
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark07\Store\obj\Debug\net7.0\Store.pdb
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark07\Store\obj\Debug\net7.0\Store.genruntimeconfig.cache
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark07\Store\obj\Debug\net7.0\ref\Store.dll

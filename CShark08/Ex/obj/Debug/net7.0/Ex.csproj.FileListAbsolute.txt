@@ -1,0 +1,14 @@
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark08\Ex\bin\Debug\net7.0\Ex.exe
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark08\Ex\bin\Debug\net7.0\Ex.deps.json
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark08\Ex\bin\Debug\net7.0\Ex.runtimeconfig.json
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark08\Ex\bin\Debug\net7.0\Ex.dll
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark08\Ex\bin\Debug\net7.0\Ex.pdb
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark08\Ex\obj\Debug\net7.0\Ex.GeneratedMSBuildEditorConfig.editorconfig
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark08\Ex\obj\Debug\net7.0\Ex.AssemblyInfoInputs.cache
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark08\Ex\obj\Debug\net7.0\Ex.AssemblyInfo.cs
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark08\Ex\obj\Debug\net7.0\Ex.csproj.CoreCompileInputs.cache
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark08\Ex\obj\Debug\net7.0\Ex.dll
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark08\Ex\obj\Debug\net7.0\refint\Ex.dll
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark08\Ex\obj\Debug\net7.0\Ex.pdb
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark08\Ex\obj\Debug\net7.0\Ex.genruntimeconfig.cache
+E:\study\TTCD-Dev\TTDNDevmaster-BE\CShark08\Ex\obj\Debug\net7.0\ref\Ex.dll

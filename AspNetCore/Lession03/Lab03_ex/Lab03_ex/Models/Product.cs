@@ -10,9 +10,9 @@
         {
             List<Product> list = new List<Product>()
             {
-                new Product { Id = 1, Image = "/images/katana.jfif", Name = "Katana chém sắt như chém bùn"},
-            new Product { Id = 2, Image = "/images/katana.jfif", Name = "Katana chém sắt như chém chuối"},
-            new Product { Id = 3, Image = "/images/katana.jfif", Name = "Katana chém sắt như chém táo"},
+                new Product { Id = 1, Image = "/images/dongho1.jpg", Name = "Đồng hồ 01"},
+            new Product { Id = 2, Image = "/images/dongho1.jpg", Name = "Đồng hồ 0"},
+            new Product { Id = 3, Image = "/images/dongho1.jpg", Name = "Đồng hồ 0"},
             };
 
             return list;

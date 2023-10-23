@@ -57,9 +57,23 @@
             <div class="form-group">
                 <label asp-for="CategoryId" class="control-label"></label>
                 <select name="CategoryId" id="CategoryId">
-                    <option value="1">Quần áo</option>
-                    <option value="2">Đồng hồ</option>
-                    <option value="3">Túi xách</option>
+                    @if(Model.CategoryId == 1)
+                    {
+                        <option value="1" selected>Quần áo</option>
+                        <option value="2">Đồng hồ</option>
+                        <option value="3">Túi xách</option>
+                    }
+                    else if (Model.CategoryId == 2)
+                    {
+                        <option value="1" >Quần áo</option>
+                        <option value="2" selected>Đồng hồ</option>
+                        <option value="3">Túi xách</option>
+                    }else
+                    {
+                        <option value="1">Quần áo</option>
+                        <option value="2" >Đồng hồ</option>
+                        <option value="3" selected>Túi xách</option>
+                    }
                 </select>
                 <span asp-validation-for="CategoryId" class="text-danger"></span>
             </div>

@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets\\images\\Avatar\\04.png"
     },
     {
+      "Id": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession04\\NetCoreMVCLab04\\NetCoreMVCLab04\\wwwroot\\images\\Product\\02.png",
+      "PackagePath": "staticwebassets\\images\\Product\\02.png"
+    },
+    {
       "Id": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession04\\NetCoreMVCLab04\\NetCoreMVCLab04\\wwwroot\\images\\Product\\dongho1.jpg",
       "PackagePath": "staticwebassets\\images\\Product\\dongho1.jpg"
     },

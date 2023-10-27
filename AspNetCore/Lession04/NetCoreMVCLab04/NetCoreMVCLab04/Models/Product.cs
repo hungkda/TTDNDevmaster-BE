@@ -16,7 +16,7 @@ namespace NetCoreMVCLab04.Models
         public float SalePrice { get; set; }
 
         [Display(Name = "Trạng thái")]
-        public byte Status { get; set; }
+        public bool Status { get; set; }
 
         [Display(Name = "Ngày thêm")]
         public DateTime CreatedDate { get; set; }
@@ -29,5 +29,8 @@ namespace NetCoreMVCLab04.Models
 
         [Display(Name = "Mô tả")]
         public string Description { get; set; }
+
+        //Tạo quan hệ ràng buộc với category
+        public virtual Category? Category { get; set; }
     }
 }

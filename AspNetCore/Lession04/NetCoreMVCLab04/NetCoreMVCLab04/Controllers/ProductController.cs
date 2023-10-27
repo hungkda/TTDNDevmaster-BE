@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using NetCoreMVCLab04.Models;
 using System.Reflection;
 
@@ -11,6 +12,8 @@ namespace NetCoreMVCLab04.Controllers
         public ActionResult Index()
         {
             var products = DataLocal.GetProduct();
+            var categories = DataLocal.GetCategory();
+            ViewBag.Categories = categories;
             return View(products);
         }
 
@@ -18,6 +21,7 @@ namespace NetCoreMVCLab04.Controllers
         public ActionResult Details(int id)
         {
             var product = DataLocal.GetProductById(id);
+            ViewBag.Categories = new SelectList(DataLocal.categories, "Id", "Name", product.Id);
             return View(product);
         }
 
@@ -25,6 +29,9 @@ namespace NetCoreMVCLab04.Controllers
         public ActionResult Create()
         {
             Product product = new Product();
+            ViewBag.Categories = new SelectList(DataLocal.categories, "Id", "Name", 1);
+            var Id = DataLocal.products.MaxBy(x => x.Id).Id;
+            ViewBag.Id = Id + 1;
             return View(product);
         }
 
@@ -49,6 +56,7 @@ namespace NetCoreMVCLab04.Controllers
                     }
                 }
 
+                model.CreatedDate = DateTime.Now;
                 DataLocal.products.Add(model);
                 return RedirectToAction(nameof(Index));
             }
@@ -62,6 +70,7 @@ namespace NetCoreMVCLab04.Controllers
         public ActionResult Edit(int id)
         {
             var product = DataLocal.GetProductById(id);
+            ViewBag.Categories = new SelectList(DataLocal.categories,"Id","Name", product.Id);
             return View(product);
         }
 
@@ -73,7 +82,7 @@ namespace NetCoreMVCLab04.Controllers
             try
             {
                 var files = HttpContext.Request.Form.Files;
-                if (files.Count() > 0 && files[0].Length > 0)
+                if (files.Count() > 0 && files[0] != null)
                 {
                     var file = files[0];
                     var fileName = file.FileName;
@@ -106,6 +115,7 @@ namespace NetCoreMVCLab04.Controllers
         public ActionResult Delete(int id)
         {
             var product = DataLocal.GetProductById(id);
+            ViewBag.Categories = new SelectList(DataLocal.categories, "Id", "Name", product.Id);
             return View(product);
         }
 

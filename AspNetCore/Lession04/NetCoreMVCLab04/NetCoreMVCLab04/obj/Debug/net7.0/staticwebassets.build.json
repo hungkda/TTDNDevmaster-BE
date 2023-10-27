@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ghhLtCuPEYPve9YcVdGnLgnIGc4AJRO7TsW25w3NECk=",
+  "Hash": "i2qg+b8+8EOaJ1chWx6p/QdpLvj8Eh7ifLj9noQp3yQ=",
   "Source": "NetCoreMVCLab04",
   "BasePath": "_content/NetCoreMVCLab04",
   "Mode": "Default",
@@ -151,6 +151,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Avatar\\04.png"
+    },
+    {
+      "Identity": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession04\\NetCoreMVCLab04\\NetCoreMVCLab04\\wwwroot\\images\\Product\\02.png",
+      "SourceId": "NetCoreMVCLab04",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession04\\NetCoreMVCLab04\\NetCoreMVCLab04\\wwwroot\\",
+      "BasePath": "_content/NetCoreMVCLab04",
+      "RelativePath": "images/Product/02.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Product\\02.png"
     },
     {
       "Identity": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession04\\NetCoreMVCLab04\\NetCoreMVCLab04\\wwwroot\\images\\Product\\dongho1.jpg",

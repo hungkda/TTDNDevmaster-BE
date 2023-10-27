@@ -2,95 +2,90 @@
 
 @{
     ViewData["Title"] = "Edit";
+    var categories = ViewBag.Categories;
 }
 
-<h1>Edit</h1>
+<h1>Sửa sản phẩm</h1>
 
 <h4>Product</h4>
 <hr />
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-6">
         <form asp-action="Edit" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Id" class="control-label"></label>
-                <input asp-for="Id" class="form-control" />
+            <div class="input-group mb-3">
+                <label asp-for="Id" class="input-group-text"></label>
+                <input asp-for="Id" class="form-control" readonly/>
                 <span asp-validation-for="Id" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
+            <div class="input-group mb-3">
+                <label asp-for="Name" class="input-group-text"></label>
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Price" class="control-label"></label>
+            <div class="input-group mb-3">
+                <label asp-for="Price" class="input-group-text"></label>
                 <input asp-for="Price" class="form-control" />
                 <span asp-validation-for="Price" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="SalePrice" class="control-label"></label>
+            <div class="input-group mb-3">
+                <label asp-for="SalePrice" class="input-group-text"></label>
                 <input asp-for="SalePrice" class="form-control" />
                 <span asp-validation-for="SalePrice" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group mb-3">
                 <label asp-for="Status" class="control-label"></label>
-                <input name="Status" id="true" type="radio" value="0" @if (Model.Status == 0)
+                <input name="Status" id="true" type="radio" value="true" @if (Model.Status == true)
                 {
                     <text>checked</text>
                 }/> <label for="true">Còn hàng</label>
-                <input name="Status" id="false" type="radio" value="1" @if (Model.Status == 1)
+                <input name="Status" id="false" type="radio" value="false" @if (Model.Status == false)
                 {
                     <text>checked</text>
                 }/><label for="false">Hết hàng</label>
                 <span asp-validation-for="Status" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="CreatedDate" class="control-label"></label>
-                <input asp-for="CreatedDate" class="form-control" />
-                <span asp-validation-for="CreatedDate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Image" class="control-label"></label>
-                <input asp-for="Image" type="file" class="form-control" />
+            <div class="form-group mb-3">
+                <label asp-for="Image" class="control-label me-5"></label>
+                <img src="~/@Model.Image" name ="Image" alt="@Model.Name" style="width:10rem"/>
+                <input type="hidden" asp-for="Image" class="form-control" />
+                <input type="file" class="form-control mt-3" name="UploadImage"/>
                 <span asp-validation-for="Image" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="CategoryId" class="control-label"></label>
-                <select name="CategoryId" id="CategoryId">
-                    @if(Model.CategoryId == 1)
+            <div class="input-group mb-3">
+                <label asp-for="CategoryId" class="input-group-text"></label>
+                <select class="form-control" asp-for="CategoryId" asp-items="categories">
+@*                     @foreach(var item in categories)
                     {
-                        <option value="1" selected>Quần áo</option>
-                        <option value="2">Đồng hồ</option>
-                        <option value="3">Túi xách</option>
-                    }
-                    else if (Model.CategoryId == 2)
-                    {
-                        <option value="1" >Quần áo</option>
-                        <option value="2" selected>Đồng hồ</option>
-                        <option value="3">Túi xách</option>
-                    }else
-                    {
-                        <option value="1">Quần áo</option>
-                        <option value="2" >Đồng hồ</option>
-                        <option value="3" selected>Túi xách</option>
-                    }
+                        if(Model.CategoryId == item.Id)
+                        {
+                            <option value="@item.Id" selected>@item.Name</option>
+                        }else
+                        {
+                            <option value="@item.Id">@item.Name</option>
+                        }
+                    } *@
                 </select>
                 <span asp-validation-for="CategoryId" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Description" class="control-label"></label>
+            <div class="input-group mb-3">
+                <label asp-for="Description" class="input-group-text"></label>
                 <input asp-for="Description" class="form-control" />
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Edit" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-success">Back to List</a>
+            </div>
+            <div class="d-none">
+                <div class="form-group">
+                    <label asp-for="CreatedDate" class="control-label"></label>
+                    <input asp-for="CreatedDate" class="form-control" />
+                    <span asp-validation-for="CreatedDate" class="text-danger"></span>
+                </div>
             </div>
         </form>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {

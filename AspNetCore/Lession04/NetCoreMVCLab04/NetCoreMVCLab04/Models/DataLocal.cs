@@ -72,17 +72,30 @@
             new Category() { 
                 Id = 1,
                 Name = "Quần áo",
-
+                CreateDate = Convert.ToDateTime("2001/02/02"),
+                CreateBy = "HuoHuo",
+                Status = true,
             },
             new Category() {
                 Id = 2,
                 Name = "Đồng hồ",
+                CreateDate = Convert.ToDateTime("2001/02/02"),
+                CreateBy = "Jingliu",
+                Status = true,
             },
             new Category() {
                 Id = 3,
                 Name = "Túi xách",
+                CreateDate = Convert.ToDateTime("2001/02/02"),
+                CreateBy = "Kafka",
+                Status = false,
             }
         };
+
+        public static List<Category> GetCategory()
+        {
+            return categories;
+        }
 
         public static List<Product> products = new List<Product>()
         {
@@ -92,7 +105,7 @@
                 Name = "Quần áo 01",
                 Price = 199999,
                 SalePrice = 0,
-                Status = 0,
+                Status = true,
                 CreatedDate = Convert.ToDateTime("2003/02/21"),
                 Image = "images/Product/quanao.jpg",
                 CategoryId = 1,
@@ -104,7 +117,7 @@
                 Name = "Quần áo 02",
                 Price = 199999,
                 SalePrice = 0,
-                Status = 0,
+                Status = true,
                 CreatedDate = Convert.ToDateTime("2003/02/21"),
                 Image = "images/Product/quanao1.jpg",
                 CategoryId = 1,
@@ -116,7 +129,7 @@
                 Name = "Đồng hồ 02",
                 Price = 199999,
                 SalePrice = 0,
-                Status = 0,
+                Status = true,
                 CreatedDate = Convert.ToDateTime("2003/02/21"),
                 Image = "images/Product/dongho1.jpg",
                 CategoryId = 2,
@@ -128,7 +141,7 @@
                 Name = "Đồng hồ 01",
                 Price = 199999,
                 SalePrice = 0,
-                Status = 0,
+                Status = true,
                 CreatedDate = Convert.ToDateTime("2003/02/21"),
                 Image = "images/Product/dongho2.jpg",
                 CategoryId = 2,
@@ -140,7 +153,7 @@
                 Name = "Túi xách 02",
                 Price = 199999,
                 SalePrice = 0,
-                Status = 0,
+                Status = true,
                 CreatedDate = Convert.ToDateTime("2003/02/21"),
                 Image = "images/Product/tuixach1.jpg",
                 CategoryId = 3,
@@ -152,7 +165,7 @@
                 Name = "Túi xách 01",
                 Price = 199999,
                 SalePrice = 0,
-                Status = 0,
+                Status = false,
                 CreatedDate = Convert.ToDateTime("2003/02/21"),
                 Image = "images/Product/tuixach2.jpg",
                 CategoryId = 3,

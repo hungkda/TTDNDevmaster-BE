@@ -2,12 +2,63 @@
 
 @{
     ViewData["Title"] = "Details";
+    
 }
 
-<h1>Details</h1>
+<h1>Chi tiết sản phẩm</h1>
 
-<div>
-    <h4>Product</h4>
+<div class="row">
+    <div class="col-md-6">
+        <div class="input-group mb-3">
+            <label asp-for="Id" class="input-group-text"></label>
+            <input asp-for="Id" class="form-control" readonly value="@Model.Id" />
+        </div>
+        <div class="input-group mb-3">
+            <label asp-for="Name" class="input-group-text"></label>
+            <input asp-for="Name" class="form-control" readonly value="@Model.Name" />
+        </div>
+        <div class="input-group mb-3">
+            <label asp-for="Price" class="input-group-text"></label>
+            <input asp-for="Price" type="text" class="form-control" readonly value="@Model.Price" />
+        </div>
+        <div class="input-group mb-3">
+            <label asp-for="SalePrice" class="input-group-text"></label>
+            <input asp-for="SalePrice" type="text" class="form-control" readonly value="@Model.SalePrice" />
+        </div>
+        <div class="input-group mb-3">
+            <label asp-for="Status" class="input-group-text"></label>
+            <input asp-for="Status" type="text" class="form-control" readonly value="@if (Model.Status == true)
+                   {
+            <text>Còn hàng</text>
+            }
+            else
+            {
+            <text>Hết hàng</text>
+            }" />
+        </div>
+        <div class="input-group mb-3">
+            <label asp-for="CreatedDate" class="input-group-text"></label>
+            <input asp-for="CreatedDate" type="text" class="form-control" readonly value="@Model.CreatedDate" />
+        </div>
+        <div class="form-group mb-3">
+            <label asp-for="Image" class="control-label"></label>
+            <img src="~/@Model.Image" name="Image" alt="@Model.Name" style="width:10rem" />
+            <span asp-validation-for="Image" class="text-danger"></span>
+        </div>
+        <div class="input-group mb-3">
+            <label asp-for="CategoryId" class="input-group-text"></label>
+            <select class="form-control" asp-for="CategoryId" asp-items="@ViewBag.Categories" readonly>
+            </select>
+            <span asp-validation-for="CategoryId" class="text-danger"></span>
+        </div>
+        <div class="input-group mb-3">
+            <label asp-for="Description" class="input-group-text"></label>
+            <textarea asp-for="Description" class="form-control" readonly ></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+    </div>
+</div>
+@* <div>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -38,7 +89,7 @@
             @Html.DisplayNameFor(model => model.Status)
         </dt>
         <dd class = "col-sm-10">
-            @if (Model.Status == 0)
+            @if (Model.Status == true)
             {
                 <span>Còn hàng</span>
             }
@@ -72,8 +123,8 @@
             @Html.DisplayFor(model => model.Description)
         </dd>
     </dl>
-</div>
+</div> *@
 <div>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id/* id = Model.PrimaryKey */ }) |
-    <a asp-action="Index">Back to List</a>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id /* id = Model.PrimaryKey */ }, new{@class="btn btn-primary"}) |
+    <a asp-action="Index" class="btn btn-success">Back to List</a>
 </div>

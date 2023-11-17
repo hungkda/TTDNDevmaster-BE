@@ -1,4 +1,4 @@
-using Lession08.Lab.Models;
+using Lession08.Lab.Areas.Admin.Models;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

@@ -293,6 +293,26 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession08\\Lab08\\Lab08\\wwwroot\\images\\account\\tuixach2.jpg",
+      "PackagePath": "staticwebassets\\images\\account\\tuixach2.jpg"
+    },
+    {
+      "Id": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession08\\Lab08\\Lab08\\wwwroot\\images\\banner\\dongho1.jpg",
+      "PackagePath": "staticwebassets\\images\\banner\\dongho1.jpg"
+    },
+    {
+      "Id": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession08\\Lab08\\Lab08\\wwwroot\\images\\banner\\tuixach2.jpg",
+      "PackagePath": "staticwebassets\\images\\banner\\tuixach2.jpg"
+    },
+    {
+      "Id": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession08\\Lab08\\Lab08\\wwwroot\\images\\blog\\dongho2.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\dongho2.jpg"
+    },
+    {
+      "Id": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession08\\Lab08\\Lab08\\wwwroot\\images\\blog\\tuixach2.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\tuixach2.jpg"
+    },
+    {
       "Id": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession08\\Lab08\\Lab08\\wwwroot\\images\\category\\01.png",
       "PackagePath": "staticwebassets\\images\\category\\01.png"
     },
@@ -307,6 +327,14 @@
     {
       "Id": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession08\\Lab08\\Lab08\\wwwroot\\images\\category\\04.png",
       "PackagePath": "staticwebassets\\images\\category\\04.png"
+    },
+    {
+      "Id": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession08\\Lab08\\Lab08\\wwwroot\\images\\customer\\tuixach1.jpg",
+      "PackagePath": "staticwebassets\\images\\customer\\tuixach1.jpg"
+    },
+    {
+      "Id": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession08\\Lab08\\Lab08\\wwwroot\\images\\customer\\tuixach2.jpg",
+      "PackagePath": "staticwebassets\\images\\customer\\tuixach2.jpg"
     },
     {
       "Id": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession08\\Lab08\\Lab08\\wwwroot\\images\\index.html",

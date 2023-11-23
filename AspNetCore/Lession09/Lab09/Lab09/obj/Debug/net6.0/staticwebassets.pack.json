@@ -121,6 +121,10 @@
       "PackagePath": "staticwebassets\\Images\\products\\van-phong\\018.jpg"
     },
     {
+      "Id": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession09\\Lab09\\Lab09\\wwwroot\\css\\font.css",
+      "PackagePath": "staticwebassets\\css\\font.css"
+    },
+    {
       "Id": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession09\\Lab09\\Lab09\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -407,6 +411,18 @@
     {
       "Id": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession09\\Lab09\\Lab09\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession09\\Lab09\\Lab09\\wwwroot\\fonts\\Gotham-Medium.otf",
+      "PackagePath": "staticwebassets\\fonts\\Gotham-Medium.otf"
+    },
+    {
+      "Id": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession09\\Lab09\\Lab09\\wwwroot\\fonts\\Gotham-Thin.otf",
+      "PackagePath": "staticwebassets\\fonts\\Gotham-Thin.otf"
+    },
+    {
+      "Id": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession09\\Lab09\\Lab09\\wwwroot\\fonts\\Gotham-Ultra.otf",
+      "PackagePath": "staticwebassets\\fonts\\Gotham-Ultra.otf"
     },
     {
       "Id": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession09\\Lab09\\Lab09\\wwwroot\\js\\site.js",

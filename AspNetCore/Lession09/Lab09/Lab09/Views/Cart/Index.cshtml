@@ -7,15 +7,15 @@
 <div class="row cart">
     <div class="col-md-12"
     <h2>GIỎ HÀNG</h2>
-        <div class="box-cart">
-            <div class="box-cart-item-box">
+        <div class="box-cart row">
+            <div class="box-cart-item-box col-9">
                 @foreach(var item in Model)
                 {
                     var money = item.Price * item.Quantity;
-                    <div class="box-cart-border-bottom d-flex justify-content-between align-items-center">
+                    <div class="box-cart-border-bottom d-flex justify-content-between align-items-center mt-5">
                            <div class="box-cart-item d-flex justify-content-start align-items-center">
                                 <img src="@item.Image" width="100px" alt="@item.Name" class="box-cart-item-img" />
-                                <div class="d-flex flex-column">
+                                <div class="d-flex flex-column ms-3">
                                      <h5>@item.Name</h5>
                                      <div class="box-cart-item-btn">
                                              <button class="btn qty_btn"><i class="fa fa-minus"></i></button>
@@ -30,17 +30,17 @@
                            </div>
 
                            <div class="btn-action">
-                                <a href="/cart/remove/?id=@item.Id" class="btn remove">
-                                     <i class="fa-solid fa-xmark"></i>
+                                    <a href="/cart/remove/?id=@item.Id" class="btn bg-danger remove">
+                                         <i class="fa-solid fa-xmark"></i>
                                 </a>
-                                <a href="/cart/update/?id=@item.Id" data-id="@item.Id" data-qty="@item.Quantity" class="btn update">
+                                    <a href="/cart/update/?id=@item.Id" data-id="@item.Id" data-qty="@item.Quantity" class="btn btn-success update">
                                      Cập nhật
                                 </a>
                            </div>
                     </div>
                 }
             </div>
-            <div class="box-cart-bill">
+            <div class="box-cart-bill col-3">
                 <h3> Tóm tắt đơn hàng </h3>
                 <p>Tổng thành tiền:<span id="totalMoney">
                      @string.Format("{0:#,##0}", ViewBag.total)</span> VND</p>
@@ -55,9 +55,9 @@
                     <div> Tổng tiền :<span id="totalMoneyPay">
                                 @string.Format("{0:#,##0}", ViewBag.total) </span> VND
                     </div>
-                    <div class="group-btn">
-                        <a href="/cart/orders" class="btn">Đặt hàng ngay</a>
-                        <a href="/product" class="btn">Tiếp tục mua hàng</a>
+                    <div class="group-btn mt-3">
+                        <a href="/cart/orders" class="btn btn-success">Đặt hàng ngay</a>
+                        <a href="/product" class="btn btn-secondary">Tiếp tục mua hàng</a>
                     </div>
                 </div>
             </div>
@@ -81,7 +81,7 @@
             $(this).parent().parent().siblings('p').attr("data-money", money);
             let total_money = formatMoney(money, 0, ",", ".");
             $(this).parent().parent().siblings('p').children("span#money").text(total_money);
-            let totalMoney = formatMoney(total(), 0, "", "");
+            let totalMoney = formatMoney(total(), 0, ",", ".");
             $("#totalMoney").text(totalMoney); // hiển thị tổng tiền
             $("#totalMoneyPay").text(totalMoney);// hiển thị tổng tiền
         })
@@ -95,9 +95,9 @@
             let href = "/cart/Update/?id=" + id + "&quantity=" + qty;
             $(this).parent().parent().parent().parent().siblings('.btn-action').children('.update').attr("href", href);
             $(this).parent().parent().siblings('p').attr("data-money", money);
-            let total_money = formatMoney(money, 0, ",", "");
+            let total_money = formatMoney(money, 0, ",", ".");
             $(this).parent().parent().siblings('p').children("span#money").text(total_money);
-            let totalMoney = formatMoney(total(), 0, "", "");
+            let totalMoney = formatMoney(total(), 0, ",", ".");
             $("#totalMoney").text(totalMoney);
             $("#totalMoneyPay").text(totalMoney);
         })
@@ -130,7 +130,7 @@
         total();
     })
 
-    function format Money(amount, decimalCount = 2, decimal = ".", thousands = ",") {
+    function formatMoney(amount, decimalCount = 2, decimal = ".", thousands = ",") {
         try {
             decimalCount = Math.abs(decimalCount);
             decimalCount = isNaN(decimalCount) ? 2 : decimalCount;

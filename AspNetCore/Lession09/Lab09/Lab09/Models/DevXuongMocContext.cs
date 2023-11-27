@@ -25,6 +25,8 @@ public partial class DevXuongMocContext : DbContext
 
     public virtual DbSet<Contact> Contacts { get; set; }
 
+    public virtual DbSet<Customer> Customers { get; set; }
+
     public virtual DbSet<Extension> Extensions { get; set; }
 
     public virtual DbSet<InforCompany> InforCompanies { get; set; }
@@ -289,6 +291,44 @@ public partial class DevXuongMocContext : DbContext
             entity.Property(e => e.UpdatedDate)
                 .HasColumnType("datetime")
                 .HasColumnName("UPDATED_DATE");
+        });
+
+        modelBuilder.Entity<Customer>(entity =>
+        {
+            entity.ToTable("CUSTOMER");
+
+            entity.Property(e => e.Id).HasColumnName("ID");
+            entity.Property(e => e.Address)
+                .HasMaxLength(500)
+                .HasColumnName("ADDRESS");
+            entity.Property(e => e.Avatar)
+                .HasMaxLength(250)
+                .HasColumnName("AVATAR");
+            entity.Property(e => e.CreateBy).HasColumnName("CREATE_BY");
+            entity.Property(e => e.CreateDate)
+                .HasColumnType("datetime")
+                .HasColumnName("CREATE_DATE");
+            entity.Property(e => e.Email)
+                .HasMaxLength(150)
+                .HasColumnName("EMAIL");
+            entity.Property(e => e.Isdelete).HasColumnName("ISDELETE");
+            entity.Property(e => e.Isupdate).HasColumnName("ISUPDATE");
+            entity.Property(e => e.Name)
+                .HasMaxLength(250)
+                .HasColumnName("NAME");
+            entity.Property(e => e.Password)
+                .HasMaxLength(320)
+                .HasColumnName("PASSWORD");
+            entity.Property(e => e.Phone)
+                .HasMaxLength(50)
+                .HasColumnName("PHONE");
+            entity.Property(e => e.UpdateBy).HasColumnName("UPDATE_BY");
+            entity.Property(e => e.UpdateDate)
+                .HasColumnType("datetime")
+                .HasColumnName("UPDATE_DATE");
+            entity.Property(e => e.Username)
+                .HasMaxLength(50)
+                .HasColumnName("USERNAME");
         });
 
         modelBuilder.Entity<Extension>(entity =>

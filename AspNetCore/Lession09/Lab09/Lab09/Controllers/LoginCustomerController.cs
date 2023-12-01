@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Text;
 using System.Security.Cryptography;
+using NuGet.Protocol;
 
 namespace Lab09.Controllers
 {
@@ -13,37 +14,39 @@ namespace Lab09.Controllers
             _context = context;
         }
         [HttpGet]
-        public IActionResult Index()
+        public IActionResult Index(string url)
         {
+            ViewBag.UrlAction = url;
             return View();
         }
 
         [HttpPost]
-        public IActionResult Index(LoginCustomer model)
+        public IActionResult Index(LoginCustomer model, string urlAction)
         {
-            if (!ModelState.IsValid)
-            {
-                return View(model); //trả về trạng thái lỗi
-            }
-
             //xử lý logic đăng nhập tại đây
             //var pass = GetSHA26Hash(model.Password);
             var dataLogin = _context.Customers.Where(x => x.Username.Equals(model.UserName) && x.Password.Equals(model.Password)).FirstOrDefault();
-            if (dataLogin != null)
+            var data = dataLogin.ToJson();
+            if (data != null)
             {
                 //lưu session khi đăng nhập thành công
-                HttpContext.Session.SetString("AdminLogin", model.UserName);
+                HttpContext.Session.SetString("Member", data);
 
+                if (!string.IsNullOrEmpty(urlAction))
+                {
+                    return Redirect(urlAction);
+                }
                 return RedirectToAction("Index", "Product");
             }
             return View(model);
+
         }
 
         [HttpGet]
         public IActionResult Logout()
         {
             HttpContext.Session.Remove("AdminLogin");
-            return RedirectToAction("Index");
+            return RedirectToAction("Index", "");
         }
 
         //static string GetSHA26Hash(string input)

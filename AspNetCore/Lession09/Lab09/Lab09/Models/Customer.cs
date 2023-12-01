@@ -32,4 +32,6 @@ public partial class Customer
     public byte? Isdelete { get; set; }
 
     public byte? Isupdate { get; set; }
+
+    public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
 }

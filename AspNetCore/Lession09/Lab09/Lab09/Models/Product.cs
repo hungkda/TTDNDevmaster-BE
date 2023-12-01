@@ -5,7 +5,7 @@ namespace Lab09.Models;
 
 public partial class Product
 {
-    public int Id { get; set; }
+    public long Id { get; set; }
 
     public int? Cid { get; set; }
 
@@ -54,4 +54,6 @@ public partial class Product
     public byte? Status { get; set; }
 
     public bool? Isdelete { get; set; }
+
+    public virtual ICollection<Orderdetail> Orderdetails { get; set; } = new List<Orderdetail>();
 }

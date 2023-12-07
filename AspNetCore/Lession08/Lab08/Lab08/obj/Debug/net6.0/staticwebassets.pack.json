@@ -293,6 +293,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession08\\Lab08\\Lab08\\wwwroot\\images\\account\\quanao.jpg",
+      "PackagePath": "staticwebassets\\images\\account\\quanao.jpg"
+    },
+    {
       "Id": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession08\\Lab08\\Lab08\\wwwroot\\images\\account\\tuixach2.jpg",
       "PackagePath": "staticwebassets\\images\\account\\tuixach2.jpg"
     },

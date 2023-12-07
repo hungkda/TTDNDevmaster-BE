@@ -16,6 +16,26 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = E:\study\TTCD-Dev\TTDNDevmaster-BE\AspNetCore\Lession09\Lab09\Lab09
 build_property._RazorSourceGeneratorDebug = 
 
+[E:/study/TTCD-Dev/TTDNDevmaster-BE/AspNetCore/Lession09/Lab09/Lab09/Areas/Admins/Views/AdminUsers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXEFkbWluVXNlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/study/TTCD-Dev/TTDNDevmaster-BE/AspNetCore/Lession09/Lab09/Lab09/Areas/Admins/Views/AdminUsers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXEFkbWluVXNlcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/study/TTCD-Dev/TTDNDevmaster-BE/AspNetCore/Lession09/Lab09/Lab09/Areas/Admins/Views/AdminUsers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXEFkbWluVXNlcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/study/TTCD-Dev/TTDNDevmaster-BE/AspNetCore/Lession09/Lab09/Lab09/Areas/Admins/Views/AdminUsers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXEFkbWluVXNlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/study/TTCD-Dev/TTDNDevmaster-BE/AspNetCore/Lession09/Lab09/Lab09/Areas/Admins/Views/AdminUsers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXEFkbWluVXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/study/TTCD-Dev/TTDNDevmaster-BE/AspNetCore/Lession09/Lab09/Lab09/Areas/Admins/Views/Dashboard/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXERhc2hib2FyZFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

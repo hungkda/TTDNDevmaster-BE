@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1UvVrnEgn5OZIsSzkBr0wv0BYgTOLmvidCmcVj/0XCI=",
+  "Hash": "2d3knmVy5t4PPMESWYiejTVnQYkDY5wrRjwjW5mCCrQ=",
   "Source": "Lab08",
   "BasePath": "_content/Lab08",
   "Mode": "Default",
@@ -1273,6 +1273,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession08\\Lab08\\Lab08\\wwwroot\\images\\account\\quanao.jpg",
+      "SourceId": "Lab08",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession08\\Lab08\\Lab08\\wwwroot\\",
+      "BasePath": "_content/Lab08",
+      "RelativePath": "images/account/quanao.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\account\\quanao.jpg"
     },
     {
       "Identity": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession08\\Lab08\\Lab08\\wwwroot\\images\\account\\tuixach2.jpg",

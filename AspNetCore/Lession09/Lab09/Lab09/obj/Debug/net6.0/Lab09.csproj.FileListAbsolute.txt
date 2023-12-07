@@ -292,3 +292,7 @@ E:\study\TTCD-Dev\TTDNDevmaster-BE\AspNetCore\Lession09\Lab09\Lab09\bin\Debug\ne
 E:\study\TTCD-Dev\TTDNDevmaster-BE\AspNetCore\Lession09\Lab09\Lab09\bin\Debug\net6.0\runtimes\win-arm64\native\e_sqlite3.dll
 E:\study\TTCD-Dev\TTDNDevmaster-BE\AspNetCore\Lession09\Lab09\Lab09\bin\Debug\net6.0\runtimes\win-x64\native\e_sqlite3.dll
 E:\study\TTCD-Dev\TTDNDevmaster-BE\AspNetCore\Lession09\Lab09\Lab09\bin\Debug\net6.0\runtimes\win-x86\native\e_sqlite3.dll
+E:\study\TTCD-Dev\TTDNDevmaster-BE\AspNetCore\Lession09\Lab09\Lab09\obj\Debug\net6.0\Lab09.MvcApplicationPartsAssemblyInfo.cs
+E:\study\TTCD-Dev\TTDNDevmaster-BE\AspNetCore\Lession09\Lab09\Lab09\bin\Debug\net6.0\JetBrains.Annotations.dll
+E:\study\TTCD-Dev\TTDNDevmaster-BE\AspNetCore\Lession09\Lab09\Lab09\bin\Debug\net6.0\X.PagedList.dll
+E:\study\TTCD-Dev\TTDNDevmaster-BE\AspNetCore\Lession09\Lab09\Lab09\bin\Debug\net6.0\X.PagedList.Mvc.Core.dll

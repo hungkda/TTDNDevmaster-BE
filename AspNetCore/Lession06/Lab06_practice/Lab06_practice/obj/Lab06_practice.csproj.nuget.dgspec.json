@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\WorkSpace\\TTDN-BE\\ASPNetCore06\\Lab06_practice\\Lab06_practice\\Lab06_practice.csproj": {}
+    "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession06\\Lab06_practice\\Lab06_practice\\Lab06_practice.csproj": {}
   },
   "projects": {
-    "C:\\WorkSpace\\TTDN-BE\\ASPNetCore06\\Lab06_practice\\Lab06_practice\\Lab06_practice.csproj": {
+    "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession06\\Lab06_practice\\Lab06_practice\\Lab06_practice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\WorkSpace\\TTDN-BE\\ASPNetCore06\\Lab06_practice\\Lab06_practice\\Lab06_practice.csproj",
+        "projectUniqueName": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession06\\Lab06_practice\\Lab06_practice\\Lab06_practice.csproj",
         "projectName": "Lab06_practice",
-        "projectPath": "C:\\WorkSpace\\TTDN-BE\\ASPNetCore06\\Lab06_practice\\Lab06_practice\\Lab06_practice.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\WorkSpace\\TTDN-BE\\ASPNetCore06\\Lab06_practice\\Lab06_practice\\obj\\",
+        "projectPath": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession06\\Lab06_practice\\Lab06_practice\\Lab06_practice.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession06\\Lab06_practice\\Lab06_practice\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

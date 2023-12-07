@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "U9jA4hveeHeBcCGaUYa/31PdMa/i4ZS6evJb3qZgsXQ=",
+  "Hash": "fVWKdOgAvvkUYNmMpsIXqLhr2nX/lo0AK9Bxl+8vQOo=",
   "Source": "Lab09",
   "BasePath": "_content/Lab09",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession09\\Lab09\\Lab09\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Lab09.bundle.scp.css"
+    },
+    {
+      "Identity": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession09\\Lab09\\Lab09\\wwwroot\\css\\adminsite.css",
+      "SourceId": "Lab09",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession09\\Lab09\\Lab09\\wwwroot\\",
+      "BasePath": "_content/Lab09",
+      "RelativePath": "css/adminsite.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\adminsite.css"
     },
     {
       "Identity": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession09\\Lab09\\Lab09\\wwwroot\\css\\font.css",

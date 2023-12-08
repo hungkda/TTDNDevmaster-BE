@@ -58,7 +58,11 @@
             </td>
 
             <td>
-                @item.NgayTao
+                @if (item.NgayTao.HasValue)
+                {
+                    @item.NgayTao.Value.ToShortDateString()
+                }
+               
             </td>
             
             <td>

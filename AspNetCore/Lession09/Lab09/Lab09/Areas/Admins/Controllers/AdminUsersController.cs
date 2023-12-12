@@ -7,11 +7,12 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Lab09.Models;
 using X.PagedList;
+using Newtonsoft.Json;
 
 namespace Lab09.Areas.Admins.Controllers
 {
     [Area("Admins")]
-    public class AdminUsersController : Controller
+    public class AdminUsersController : BaseController
     {
         private readonly DevXuongMocContext _context;
 
@@ -68,6 +69,7 @@ namespace Lab09.Areas.Admins.Controllers
         {
             if (ModelState.IsValid)
             {
+
                 adminUser.NgayCapNhat = DateTime.Now;
                 adminUser.NgayTao = DateTime.Now;
                 _context.Add(adminUser);
@@ -110,6 +112,7 @@ namespace Lab09.Areas.Admins.Controllers
                 try
                 {
                     adminUser.NgayCapNhat = DateTime.Now;
+                    
                     _context.Update(adminUser);
                     await _context.SaveChangesAsync();
                 }

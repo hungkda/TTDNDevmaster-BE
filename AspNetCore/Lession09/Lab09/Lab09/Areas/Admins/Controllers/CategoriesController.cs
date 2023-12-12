@@ -7,11 +7,13 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Lab09.Models;
 using X.PagedList;
+using Newtonsoft.Json;
+using Lab09.Areas.Admins.Controllers;
 
 namespace Lab09.Areas.Admin.Controllers
 {
     [Area("Admins")]
-    public class CategoriesController : Controller
+    public class CategoriesController : BaseController
     {
         private readonly DevXuongMocContext _context;
 
@@ -80,7 +82,10 @@ namespace Lab09.Areas.Admin.Controllers
                         category.Icon = "/Content/Uploads/images/danh-muc/" + FileName;
                     }
                 }
+                var admin = JsonConvert.DeserializeObject<AdminUser>(HttpContext.Session.GetString("AdminLogin"));
 
+                category.AdminCreated = admin.Account;
+                category.AdminUpdated = admin.Account;
                 category.CreatedDate = DateTime.Now;
                 category.UpdatedDate = DateTime.Now;
 
@@ -135,7 +140,9 @@ namespace Lab09.Areas.Admin.Controllers
                             category.Icon = "/Content/Uploads/images/danh-muc/" + FileName;
                         }
                     }
+                    var admin = JsonConvert.DeserializeObject<AdminUser>(HttpContext.Session.GetString("AdminLogin"));
 
+                    category.AdminUpdated = admin.Account;
                     category.UpdatedDate = DateTime.Now;
 
                     _context.Update(category);

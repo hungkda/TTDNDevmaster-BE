@@ -1,6 +1,7 @@
 ﻿using Lab09.Areas.Admins.Models;
 using Lab09.Models;
 using Microsoft.AspNetCore.Mvc;
+using NuGet.Protocol;
 using System.Security.Cryptography;
 using System.Text;
 
@@ -31,11 +32,12 @@ namespace Lab09.Areas.Admins.Controllers
             //xử lý login đăng nhập
             var pass = GetSHA256Hash(model.Password);
             var dataLogin = _context.AdminUsers.Where(x => x.Email.Equals(model.Email) && x.Password.Equals(pass)).FirstOrDefault();
+            var data = dataLogin.ToJson();
 
-            if(dataLogin != null)
+            if(data != null)
             {
                 // lưu session khi đăng nhập thành công
-                HttpContext.Session.SetString("AdminLogin", model.Email);
+                HttpContext.Session.SetString("AdminLogin", data);
                 return RedirectToAction("Index", "Dashboard");
             }
 

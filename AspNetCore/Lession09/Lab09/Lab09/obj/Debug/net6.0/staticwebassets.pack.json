@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Lab09.bundle.scp.css"
     },
     {
+      "Id": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession09\\Lab09\\Lab09\\wwwroot\\Content\\Uploads\\images\\Banner\\banner.png",
+      "PackagePath": "staticwebassets\\Content\\Uploads\\images\\Banner\\banner.png"
+    },
+    {
       "Id": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession09\\Lab09\\Lab09\\wwwroot\\Content\\Uploads\\images\\danh-muc\\admin1.jfif",
       "PackagePath": "staticwebassets\\Content\\Uploads\\images\\danh-muc\\admin1.jfif"
     },

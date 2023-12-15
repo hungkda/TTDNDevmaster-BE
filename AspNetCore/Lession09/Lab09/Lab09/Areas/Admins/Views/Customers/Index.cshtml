@@ -1,108 +1,92 @@
-﻿@model IEnumerable<Lab09.Models.Customer>
+﻿@model X.PagedList.IPagedList<Lab09.Models.Customer>
+@using X.PagedList.Mvc.Core
 
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Areas/Admins/Views/Shared/Admin.cshtml";
 }
 
-<h1>Index</h1>
+<h1 class="py-3">Danh sách khách hàng</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
+<form action="" method="get" class="form-inline d-flex justify-content-between mb-3">
+    <div class="form-group">
+        <label class="sr-only">Tìm tên theo loại</label>
+        <input class="form-control" name="name" id="keyword" placeholder="Nhập tiêu đề cần tìm" />
+        <button type="submit" class="btn btn-default mr-1"><i class="fas fa-search"></i></button>
+    </div>
+
+    <a asp-action="Create" class="btn btn-success"><i class="fa fa-plus"></i> Thêm mới</a>
+</form>
+
+<table class="table table-bordered table-hover">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Name)
+                Tên
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Username)
+                Tài khoản
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Password)
+                Email
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Address)
+                Ảnh đại diện
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Email)
+                Ngày tạo
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Phone)
+                IsActive
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Avatar)
+                Tác vụ
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CreateDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.UpdateDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CreateBy)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.UpdateBy)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Isdelete)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Isupdate)
-            </th>
-            <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Username)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Password)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Address)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Phone)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Avatar)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CreateDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UpdateDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CreateBy)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UpdateBy)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Isdelete)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Isupdate)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Username)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    <img src="@item.Avatar" alt="@item.Name" width="60" />
+                </td>
+                <td>
+                    @if (item.CreateDate.HasValue)
+                    {
+                        @item.CreateDate.Value.ToShortDateString()
+                    }
+                </td>
+                <td>
+                    @if (item.Isupdate == 1)
+                    {
+                        <span class="text-success">Active</span>
+                    }
+                    else if (item.Isupdate == 0)
+                    {
+                        <span class="text-danger">Inactive</span>
+                    }
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-event"><i class="fa-regular fa-pen-to-square"></i></a>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-success btn-event"><i class="fa-solid fa-circle-info"></i></a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" onclick="return confirm('Bạn có chắc muốn xóa mục này không?');" class="btn btn-danger btn-event"><i class="fa-solid fa-trash-can"></i></a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
+<hr />
+@Html.PagedListPager(Model, page=>Url.Action("Index", new {page=page}), new X.PagedList.Web.Common.PagedListRenderOptions{
+        LiElementClasses = new string[] {"page-item"},
+PageClasses = new string[] {"page-link"}
+    })

@@ -10,7 +10,7 @@ using X.PagedList;
 using Newtonsoft.Json;
 using Lab09.Areas.Admins.Controllers;
 
-namespace Lab09.Areas.Admin.Controllers
+namespace Lab09.Areas.Admins.Controllers
 {
     [Area("Admins")]
     public class CategoriesController : BaseController

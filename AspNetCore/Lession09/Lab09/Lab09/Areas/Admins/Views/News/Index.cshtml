@@ -4,6 +4,7 @@
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Areas/Admins/Views/Shared/Admin.cshtml";
+    var stt = 0;
 }
 
 <h1 class="py-3">Danh sách tin tức</h1>
@@ -18,9 +19,12 @@
     <a asp-action="Create" class="btn btn-success"><i class="fa fa-plus"></i> Thêm mới</a>
 </form>
 
-<table class="table table-bordered table-hover">
+<table class="table table-bordered table-hover bg-white">
     <thead>
         <tr>
+            <th>
+                STT
+            </th>
             <th>
                 Tiêu đề
             </th>
@@ -29,12 +33,6 @@
             </th>
             <th>
                 Views
-            </th>
-            <th>
-                Likes
-            </th>
-            <th>
-                Star
             </th>
             <th>
                 Ngày tạo
@@ -50,7 +48,11 @@
     <tbody>
         @foreach (var item in Model)
         {
+            stt++;
             <tr>
+                <td>
+                    @stt
+                </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Title)
                 </td>
@@ -59,12 +61,6 @@
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Views)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Likes)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Star)
                 </td>
                 <td>
                     @if (item.CreatedDate.HasValue)

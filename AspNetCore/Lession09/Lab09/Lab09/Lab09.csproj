@@ -25,6 +25,7 @@
   <ItemGroup>
     <Folder Include="Areas\Admins\Data\" />
     <Folder Include="Areas\Admins\Views\Product\" />
+    <Folder Include="wwwroot\Content\plugin\ckfinder\userfiles\" />
     <Folder Include="wwwroot\Content\Plugn\ckfinder\App_Data\" />
     <Folder Include="wwwroot\Content\Plugn\ckfinder\src\CKFinder.Connector.WebApp\userfiles\" />
     <Folder Include="wwwroot\Content\Plugn\ckfinder\userfiles\" />
@@ -39,6 +40,12 @@
     <None Include="wwwroot\Content\Plugn\ckfinder\src\CKFinder.Connector.WebApp\CKFinder.Connector.WebApp.csproj" />
     <None Include="wwwroot\Content\Plugn\ckfinder\src\CKFinder.Connector.WebApp\CKFinder.Connector.WebApp.csproj.user" />
     <None Include="wwwroot\Content\Plugn\ckfinder\src\CKFinder.Connector.WebApp\Properties\PublishProfiles\FolderProfile.pubxml.user" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="CKFinder">
+      <HintPath>wwwroot\Content\plugin\ckfinder\bin\Release\CKFinder.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

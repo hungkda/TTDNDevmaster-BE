@@ -133,11 +133,11 @@ namespace Lab09.Areas.Admins.Controllers
                     {
                         var file = files[0];
                         var FileName = file.FileName;
-                        var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\Images", FileName);
+                        var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\Content\\Uploads\\images\\customers", FileName);
                         using (var stream = new FileStream(path, FileMode.Create))
                         {
                             file.CopyTo(stream);
-                            customer.Avatar = "/Images/" + FileName;
+                            customer.Avatar = "/Content/Uploads/images/customers/" + FileName;
                         }
                     }
 

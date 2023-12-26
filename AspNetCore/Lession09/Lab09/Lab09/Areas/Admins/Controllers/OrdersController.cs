@@ -6,11 +6,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Lab09.Models;
+using X.PagedList;
 
 namespace Lab09.Areas.Admins.Controllers
 {
     [Area("Admins")]
-    public class OrdersController : Controller
+    public class OrdersController : BaseController
     {
         private readonly DevXuongMocContext _context;
 
@@ -20,10 +21,17 @@ namespace Lab09.Areas.Admins.Controllers
         }
 
         // GET: Admins/Orders
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string name, int page = 1)
         {
-            var devXuongMocContext = _context.Orders.Include(o => o.IdcustomerNavigation).Include(o => o.IdpaymentNavigation);
-            return View(await devXuongMocContext.ToListAsync());
+            int limit = 5;
+
+            var order = await _context.Orders.Include(o => o.IdcustomerNavigation).Include(o => o.IdpaymentNavigation).OrderBy(c => c.Id).ToPagedListAsync(page, limit);
+            if (!String.IsNullOrEmpty(name))
+            {
+                order = await _context.Orders.Include(o => o.IdcustomerNavigation).Include(o => o.IdpaymentNavigation).Where(c => c.NameReciver.Contains(name)).OrderBy(c => c.Id).ToPagedListAsync(page, limit);
+            }
+            ViewBag.keyword = name;
+            return View(order);
         }
 
         // GET: Admins/Orders/Details/5
@@ -47,7 +55,7 @@ namespace Lab09.Areas.Admins.Controllers
         }
 
         // GET: Admins/Orders/Create
-        public IActionResult Create()
+/*        public IActionResult Create()
         {
             ViewData["Idcustomer"] = new SelectList(_context.Customers, "Id", "Id");
             ViewData["Idpayment"] = new SelectList(_context.PaymentMethods, "Id", "Id");
@@ -70,7 +78,7 @@ namespace Lab09.Areas.Admins.Controllers
             ViewData["Idcustomer"] = new SelectList(_context.Customers, "Id", "Id", order.Idcustomer);
             ViewData["Idpayment"] = new SelectList(_context.PaymentMethods, "Id", "Id", order.Idpayment);
             return View(order);
-        }
+        }*/
 
         // GET: Admins/Orders/Edit/5
         public async Task<IActionResult> Edit(long? id)
@@ -130,21 +138,34 @@ namespace Lab09.Areas.Admins.Controllers
         // GET: Admins/Orders/Delete/5
         public async Task<IActionResult> Delete(long? id)
         {
-            if (id == null || _context.Orders == null)
+            /*            if (id == null || _context.Orders == null)
+                        {
+                            return NotFound();
+                        }
+
+                        var order = await _context.Orders
+                            .Include(o => o.IdcustomerNavigation)
+                            .Include(o => o.IdpaymentNavigation)
+                            .FirstOrDefaultAsync(m => m.Id == id);
+                        if (order == null)
+                        {
+                            return NotFound();
+                        }
+
+                        return View(order);*/
+
+            if (_context.Orders.Include(o => o.IdcustomerNavigation).Include(o => o.IdpaymentNavigation) == null)
             {
-                return NotFound();
+                return Problem("Entity set 'DevXuongMocContext.Customers'  is null.");
+            }
+            var order = await _context.Orders.FindAsync(id);
+            if (order != null)
+            {
+                _context.Orders.Remove(order);
             }
 
-            var order = await _context.Orders
-                .Include(o => o.IdcustomerNavigation)
-                .Include(o => o.IdpaymentNavigation)
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (order == null)
-            {
-                return NotFound();
-            }
-
-            return View(order);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
         }
 
         // POST: Admins/Orders/Delete/5

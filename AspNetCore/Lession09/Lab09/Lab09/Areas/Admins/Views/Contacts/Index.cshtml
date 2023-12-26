@@ -4,6 +4,7 @@
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Areas/Admins/Views/Shared/Admin.cshtml";
+    var stt = 0;
 }
 
 <h1 class="py-3">Danh sách liên hệ</h1>
@@ -18,9 +19,12 @@
     <a asp-action="Create" class="btn btn-success"><i class="fa fa-plus"></i> Thêm mới</a>
 </form>
 
-<table class="table table-bordered table-hover">
+<table class="table table-bordered table-hover bg-white">
     <thead>
         <tr>
+            <th>
+                STT
+            </th>
             <th>
                 Tiêu đề
             </th>
@@ -47,7 +51,11 @@
     <tbody>
         @foreach (var item in Model)
         {
+            stt++;
             <tr>
+                <td>
+                    @stt
+                </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Title)
                 </td>

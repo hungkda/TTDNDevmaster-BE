@@ -4,6 +4,7 @@
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Areas/Admins/Views/Shared/Admin.cshtml";
+    var stt = 0;
 }
 
 <h1 class="py-3">Danh sách danh mục</h1>
@@ -22,6 +23,9 @@
     <thead>
         <tr>
             <th>
+                STT
+            </th>
+            <th>
                 Tiêu đề
             </th>
             <th>
@@ -31,13 +35,7 @@
                 Slug
             </th>
             <th>
-                Đặt hàng
-            </th>
-            <th>
                 Ngày tạo
-            </th>
-            <th>
-                Ghi chú
             </th>
             <th>
                 Trạng thái
@@ -50,7 +48,11 @@
     <tbody>
         @foreach (var item in Model)
         {
+            stt++;
             <tr>
+                <td>
+                    @stt
+                </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Title)
                 </td>
@@ -61,16 +63,10 @@
                     @Html.DisplayFor(modelItem => item.Slug)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Orders)
-                </td>
-                <td>
                     @if (item.CreatedDate.HasValue)
                     {
                         @item.CreatedDate.Value.ToShortDateString()
                     }
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Notes)
                 </td>
                 <td>
                     @if (item.Status == 1)

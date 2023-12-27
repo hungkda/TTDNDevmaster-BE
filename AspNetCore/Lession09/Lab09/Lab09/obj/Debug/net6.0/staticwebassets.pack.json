@@ -12033,10 +12033,6 @@
       "PackagePath": "staticwebassets\\Content\\Uploads\\images\\tin-tuc\\tintuc-6.png"
     },
     {
-      "Id": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession09\\Lab09\\Lab09\\wwwroot\\Content\\plugin\\ckeditor.rar",
-      "PackagePath": "staticwebassets\\Content\\plugin\\ckeditor.rar"
-    },
-    {
       "Id": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession09\\Lab09\\Lab09\\wwwroot\\Content\\plugin\\ckeditor\\CHANGES.md",
       "PackagePath": "staticwebassets\\Content\\plugin\\ckeditor\\CHANGES.md"
     },
@@ -13335,10 +13331,6 @@
     {
       "Id": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession09\\Lab09\\Lab09\\wwwroot\\Content\\plugin\\ckeditor\\styles.js",
       "PackagePath": "staticwebassets\\Content\\plugin\\ckeditor\\styles.js"
-    },
-    {
-      "Id": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession09\\Lab09\\Lab09\\wwwroot\\Content\\plugin\\ckfinder.rar",
-      "PackagePath": "staticwebassets\\Content\\plugin\\ckfinder.rar"
     },
     {
       "Id": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession09\\Lab09\\Lab09\\wwwroot\\Content\\plugin\\ckfinder\\bin\\Debug\\CKFinder.dll",

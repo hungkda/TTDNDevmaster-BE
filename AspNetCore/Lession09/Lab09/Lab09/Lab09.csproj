@@ -24,11 +24,12 @@
 
   <ItemGroup>
     <Folder Include="Areas\Admins\Data\" />
-    <Folder Include="Areas\Admins\Views\Product\" />
     <Folder Include="wwwroot\Content\plugin\ckfinder\userfiles\" />
     <Folder Include="wwwroot\Content\Plugn\ckfinder\App_Data\" />
     <Folder Include="wwwroot\Content\Plugn\ckfinder\src\CKFinder.Connector.WebApp\userfiles\" />
     <Folder Include="wwwroot\Content\Plugn\ckfinder\userfiles\" />
+    <Folder Include="wwwroot\Content\Uploads\images\material\" />
+    <Folder Include="wwwroot\Content\Uploads\images\extension\" />
   </ItemGroup>
 
   <ItemGroup>

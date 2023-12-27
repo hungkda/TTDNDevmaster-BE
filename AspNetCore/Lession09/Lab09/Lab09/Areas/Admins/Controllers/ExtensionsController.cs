@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Lab09.Models;
+using Newtonsoft.Json;
+using X.PagedList;
 
 namespace Lab09.Areas.Admins.Controllers
 {
@@ -19,15 +21,22 @@ namespace Lab09.Areas.Admins.Controllers
             _context = context;
         }
 
-        // GET: Admins/Extensions
-        public async Task<IActionResult> Index()
+        // GET: Admin/Extensions
+        public async Task<IActionResult> Index(string name, int page = 1)
         {
-              return _context.Extensions != null ? 
-                          View(await _context.Extensions.ToListAsync()) :
-                          Problem("Entity set 'DevXuongMocContext.Extensions'  is null.");
+            //số bản ghi trên 1 trang
+            int limit = 5;
+
+            var account = await _context.Extensions.OrderBy(c => c.Id).ToPagedListAsync(page, limit);
+            if (!String.IsNullOrEmpty(name))
+            {
+                account = await _context.Extensions.Where(c => c.Title.Contains(name)).OrderBy(c => c.Id).ToPagedListAsync(page, limit);
+            }
+            ViewBag.keyword = name;
+            return View(account);
         }
 
-        // GET: Admins/Extensions/Details/5
+        // GET: Admin/Extensions/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Extensions == null)
@@ -45,13 +54,13 @@ namespace Lab09.Areas.Admins.Controllers
             return View(extension);
         }
 
-        // GET: Admins/Extensions/Create
+        // GET: Admin/Extensions/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Admins/Extensions/Create
+        // POST: Admin/Extensions/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -60,6 +69,24 @@ namespace Lab09.Areas.Admins.Controllers
         {
             if (ModelState.IsValid)
             {
+                var files = HttpContext.Request.Form.Files;
+                if (files.Count() > 0 && files[0].Length > 0)
+                {
+                    var file = files[0];
+                    var FileName = file.FileName;
+                    var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\Content\\Uploads\\images\\extension", FileName);
+                    using (var stream = new FileStream(path, FileMode.Create))
+                    {
+                        file.CopyTo(stream);
+                        extension.Icon = "/Content/Uploads/images/extension/" + FileName;
+                    }
+                }
+                extension.CreatedDate = DateTime.Now;
+                extension.UpdatedDate = DateTime.Now;
+                var admin = JsonConvert.DeserializeObject<AdminUser>(HttpContext.Session.GetString("AdminLogin"));
+                extension.AdminCreated = admin.Account;
+                extension.AdminUpdated = admin.Account;
+
                 _context.Add(extension);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -67,7 +94,7 @@ namespace Lab09.Areas.Admins.Controllers
             return View(extension);
         }
 
-        // GET: Admins/Extensions/Edit/5
+        // GET: Admin/Extensions/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Extensions == null)
@@ -83,7 +110,7 @@ namespace Lab09.Areas.Admins.Controllers
             return View(extension);
         }
 
-        // POST: Admins/Extensions/Edit/5
+        // POST: Admin/Extensions/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -99,6 +126,23 @@ namespace Lab09.Areas.Admins.Controllers
             {
                 try
                 {
+                    var files = HttpContext.Request.Form.Files;
+                    if (files.Count() > 0 && files[0].Length > 0)
+                    {
+                        var file = files[0];
+                        var FileName = file.FileName;
+                        var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\Content\\Uploads\\images\\extension", FileName);
+                        using (var stream = new FileStream(path, FileMode.Create))
+                        {
+                            file.CopyTo(stream);
+                            extension.Icon = "/Content/Uploads/images/extension/" + FileName;
+                        }
+                    }
+
+                    extension.UpdatedDate = DateTime.Now;
+                    var admin = JsonConvert.DeserializeObject<AdminUser>(HttpContext.Session.GetString("AdminLogin"));
+                    extension.AdminUpdated = admin.Account;
+
                     _context.Update(extension);
                     await _context.SaveChangesAsync();
                 }
@@ -118,29 +162,23 @@ namespace Lab09.Areas.Admins.Controllers
             return View(extension);
         }
 
-        // GET: Admins/Extensions/Delete/5
+        // GET: Admin/Extensions/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.Extensions == null)
-            {
-                return NotFound();
-            }
+            //if (id == null || _context.Extensions == null)
+            //{
+            //    return NotFound();
+            //}
 
-            var extension = await _context.Extensions
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (extension == null)
-            {
-                return NotFound();
-            }
+            //var extension = await _context.Extensions
+            //    .FirstOrDefaultAsync(m => m.Id == id);
+            //if (extension == null)
+            //{
+            //    return NotFound();
+            //}
 
-            return View(extension);
-        }
+            //return View(extension);
 
-        // POST: Admins/Extensions/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
             if (_context.Extensions == null)
             {
                 return Problem("Entity set 'DevXuongMocContext.Extensions'  is null.");
@@ -150,14 +188,33 @@ namespace Lab09.Areas.Admins.Controllers
             {
                 _context.Extensions.Remove(extension);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
+        // POST: Admin/Extensions/Delete/5
+        //[HttpPost, ActionName("Delete")]
+        //[ValidateAntiForgeryToken]
+        //public async Task<IActionResult> DeleteConfirmed(int id)
+        //{
+        //    if (_context.Extensions == null)
+        //    {
+        //        return Problem("Entity set 'DevXuongMocContext.Extensions'  is null.");
+        //    }
+        //    var extension = await _context.Extensions.FindAsync(id);
+        //    if (extension != null)
+        //    {
+        //        _context.Extensions.Remove(extension);
+        //    }
+
+        //    await _context.SaveChangesAsync();
+        //    return RedirectToAction(nameof(Index));
+        //}
+
         private bool ExtensionExists(int id)
         {
-          return (_context.Extensions?.Any(e => e.Id == id)).GetValueOrDefault();
+            return (_context.Extensions?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }

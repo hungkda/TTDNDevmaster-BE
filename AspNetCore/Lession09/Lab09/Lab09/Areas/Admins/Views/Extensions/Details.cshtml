@@ -5,105 +5,93 @@
     Layout = "~/Areas/Admins/Views/Shared/Admin.cshtml";
 }
 
-<h1>Details</h1>
+<h1 class="py-3">Chi tiết extension</h1>
 
-<div>
-    <h4>Extension</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Title)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Icon)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Icon)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.MetaTitle)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.MetaTitle)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.MetaKeyword)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.MetaKeyword)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.MetaDescription)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.MetaDescription)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Slug)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Slug)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Orders)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Orders)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Parentid)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Parentid)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CreatedDate)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.CreatedDate)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.UpdatedDate)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.UpdatedDate)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.AdminCreated)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.AdminCreated)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.AdminUpdated)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.AdminUpdated)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Notes)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Notes)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Status)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Status)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Isdelete)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Isdelete)
-        </dd>
-    </dl>
+<div class="row">
+    <div class="col-md-6">
+        <div class="form-group">
+            <label class="control-label">Tiêu đề</label>
+            <input asp-for="Title" class="form-control" readonly />
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="MetaTitle" class="control-label"></label>
+            <input asp-for="MetaTitle" class="form-control" readonly />
+            <span asp-validation-for="MetaTitle" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="MetaKeyword" class="control-label"></label>
+            <input asp-for="MetaKeyword" class="form-control" readonly />
+            <span asp-validation-for="MetaKeyword" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="MetaDescription" class="control-label"></label>
+            <input asp-for="MetaDescription" class="form-control" readonly />
+            <span asp-validation-for="MetaDescription" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Slug" class="control-label"></label>
+            <input asp-for="Slug" class="form-control" readonly />
+            <span asp-validation-for="Slug" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Orders" class="control-label"></label>
+            <input asp-for="Orders" class="form-control" readonly />
+            <span asp-validation-for="Orders" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Parentid" class="control-label"></label>
+            <input asp-for="Parentid" class="form-control" readonly />
+            <span asp-validation-for="Parentid" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label class="control-label">Ngày tạo</label>
+            <input asp-for="CreatedDate" class="form-control" readonly />
+            <span asp-validation-for="CreatedDate" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label class="control-label">Ngày cập nhật</label>
+            <input asp-for="UpdatedDate" class="form-control" readonly />
+            <span asp-validation-for="UpdatedDate" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label class="control-label">Người tạo</label>
+            <input asp-for="AdminCreated" class="form-control" readonly />
+            <span asp-validation-for="AdminCreated" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label class="control-label">Người cập nhật</label>
+            <input asp-for="AdminUpdated" class="form-control" readonly />
+            <span asp-validation-for="AdminUpdated" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label class="control-label">Ghi chú</label>
+            <input asp-for="Notes" class="form-control" readonly />
+            <span asp-validation-for="Notes" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Status" class="control-label"></label>
+            <input class="form-control" readonly @if (Model.Status == 1)
+            {
+                <text>value="Active"</text>
+            }
+            else
+            {
+                <text>value="Inactive"</text>
+            }
+            />
+            <span asp-validation-for="Status" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-group pl-5">
+            <label class="control-label">Icon</label><br />
+            <img src="@Model.Icon" alt="@Model.Title" width="300" class="pb-3" />
+            <span asp-validation-for="Icon" class="text-danger"></span>
+        </div>
+    </div>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-warning">Edit</a>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
 </div>

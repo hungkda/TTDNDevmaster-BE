@@ -5,22 +5,21 @@
     Layout = "~/Areas/Admins/Views/Shared/Admin.cshtml";
 }
 
-<h1>Create</h1>
+<h1 class="py-3">Thêm mới extension</h1>
 
-<h4>Extension</h4>
-<hr />
 <div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
+    <div class="col-md-6">
+        <form asp-action="Create" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Title" class="control-label"></label>
+                <label class="control-label">Tiêu đề</label>
                 <input asp-for="Title" class="form-control" />
                 <span asp-validation-for="Title" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Icon" class="control-label"></label>
-                <input asp-for="Icon" class="form-control" />
+                <label class="control-label">Icon</label>
+                <input asp-for="Icon" class="form-control" type="hidden" />
+                <input class="form-control" type="file" name="UploadIcon" />
                 <span asp-validation-for="Icon" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -54,28 +53,31 @@
                 <span asp-validation-for="Parentid" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="AdminCreated" class="control-label"></label>
-                <input asp-for="AdminCreated" class="form-control" />
-                <span asp-validation-for="AdminCreated" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="AdminUpdated" class="control-label"></label>
-                <input asp-for="AdminUpdated" class="form-control" />
-                <span asp-validation-for="AdminUpdated" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Notes" class="control-label"></label>
-                <input asp-for="Notes" class="form-control" />
+                <label class="control-label">Ghi chú</label>
+                <textarea asp-for="Notes" class="form-control ckeditor" id="inputCK"></textarea>
                 <span asp-validation-for="Notes" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="Status" class="control-label"></label>
+                <select asp-for="Status" class="form-select" aria-label="Default select example">
+                    <option value="1">Active</option>
+                    <option value="0">Inactive</option>
+                </select>
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-secondary">Back to List</a>
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
+@section Scripts{
+    <script>
+        CKEDITOR.replace('inputCK', {
+            customConfig: '/content/plugin/ckeditor/config.js',
+            extraAllowedContent: 'span',
+        });
+    </script>
+}

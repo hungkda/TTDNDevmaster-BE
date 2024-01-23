@@ -12009,6 +12009,14 @@
       "PackagePath": "staticwebassets\\Content\\Uploads\\images\\danh-muc\\icon-van-phong.png"
     },
     {
+      "Id": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession09\\Lab09\\Lab09\\wwwroot\\Content\\Uploads\\images\\material\\go1.jpg",
+      "PackagePath": "staticwebassets\\Content\\Uploads\\images\\material\\go1.jpg"
+    },
+    {
+      "Id": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession09\\Lab09\\Lab09\\wwwroot\\Content\\Uploads\\images\\material\\go2.jpg",
+      "PackagePath": "staticwebassets\\Content\\Uploads\\images\\material\\go2.jpg"
+    },
+    {
       "Id": "E:\\study\\TTCD-Dev\\TTDNDevmaster-BE\\AspNetCore\\Lession09\\Lab09\\Lab09\\wwwroot\\Content\\Uploads\\images\\tin-tuc\\tintuc-1.png",
       "PackagePath": "staticwebassets\\Content\\Uploads\\images\\tin-tuc\\tintuc-1.png"
     },

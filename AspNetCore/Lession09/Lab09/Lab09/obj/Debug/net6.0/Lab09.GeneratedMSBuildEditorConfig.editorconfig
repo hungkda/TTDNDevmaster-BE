@@ -116,6 +116,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXEV4dGVuc2lvbnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/study/TTCD-Dev/TTDNDevmaster-BE/AspNetCore/Lession09/Lab09/Lab09/Areas/Admins/Views/Introductions/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXEludHJvZHVjdGlvbnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/study/TTCD-Dev/TTDNDevmaster-BE/AspNetCore/Lession09/Lab09/Lab09/Areas/Admins/Views/Introductions/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXEludHJvZHVjdGlvbnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/study/TTCD-Dev/TTDNDevmaster-BE/AspNetCore/Lession09/Lab09/Lab09/Areas/Admins/Views/Introductions/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXEludHJvZHVjdGlvbnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/study/TTCD-Dev/TTDNDevmaster-BE/AspNetCore/Lession09/Lab09/Lab09/Areas/Admins/Views/Introductions/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXEludHJvZHVjdGlvbnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/study/TTCD-Dev/TTDNDevmaster-BE/AspNetCore/Lession09/Lab09/Lab09/Areas/Admins/Views/Introductions/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXEludHJvZHVjdGlvbnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/study/TTCD-Dev/TTDNDevmaster-BE/AspNetCore/Lession09/Lab09/Lab09/Areas/Admins/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXExvZ2luXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
